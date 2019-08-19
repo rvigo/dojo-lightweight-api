@@ -1,7 +1,7 @@
 package store.model;
 
 import org.bson.types.ObjectId;
-
+//TODO implementar o mapeamento utilizando o morphia
 public class Item {
 
     private ObjectId id;
