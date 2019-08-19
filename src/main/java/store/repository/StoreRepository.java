@@ -14,29 +14,27 @@ public class StoreRepository {
 
     @Inject
     public StoreRepository(MorphiaDriver morphia) {
-        this.datastore = morphia.getDataStore();
+       //TODO implementar injeção de dependencia
     }
 
     public Item findOne(ObjectId id) {
-        return datastore.get(Item.class, id);
+        return null;
     }
 
     public List<Item> findAll() {
-        return datastore.find(Item.class).asList();
+        return null;
     }
 
+    //Merge
     public Item updateOne(ObjectId id, Item item) {
-        item.setId(id);
-        datastore.merge(item);
-        return item;
+        return null;
     }
 
     public Item save(Item item) {
-        datastore.save(item);
-        return item;
+        return null;
     }
 
+    //F/D
     public void deleteOne(ObjectId id) {
-        datastore.delete(datastore.get(Item.class, id));
     }
 }

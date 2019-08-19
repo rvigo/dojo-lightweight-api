@@ -1,13 +1,9 @@
 package store.model;
 
 import org.bson.types.ObjectId;
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Id;
 
-@Entity(noClassnameStored = true)
 public class Item {
 
-    @Id
     private ObjectId id;
 
     private String name;
